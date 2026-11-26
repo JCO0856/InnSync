@@ -7,10 +7,10 @@ import java.time.LocalTime;
 import java.time.format.DateTimeFormatter;
 import java.util.Locale;
 
-/** Shared colors, fonts and formatting for the InnSync UI. */
+// Shared colors, fonts and formatting for the InnSync UI. 
 public final class UiUtil {
 
-    // ---- colors (taken from the InnSync mockup) ----
+    //colors (taken from the InnSync mockup) 
     public static final Color BLUE = new Color(0x0033CC);
     public static final Color DARK = new Color(0x2D2A29);
     public static final Color NAV_ACTIVE = new Color(0x6E6E6E);
@@ -26,7 +26,7 @@ public final class UiUtil {
     public static final Color EDIT = new Color(0x3F7D0A);
     public static final Color DELETE = new Color(0xFF3B3B);
 
-    // ---- hotel policy: standard check-in / check-out time shown in the tables ----
+    //hotel policy: standard check-in / check-out time shown in the tables 
     public static final LocalTime CHECK_IN_TIME = LocalTime.of(11, 0);
     public static final LocalTime CHECK_OUT_TIME = LocalTime.of(11, 0);
 
@@ -39,12 +39,12 @@ public final class UiUtil {
         return new Font("SansSerif", style, size);
     }
 
-    /** Formats an amount as Philippine peso, e.g. "P 1,200.00". */
+    //Formats an amount as Philippine peso, -"P 1,200.00".
     public static String money(double amount) {
         return String.format(Locale.US, "\u20B1 %,.2f", amount);
     }
 
-    /** e.g. "2026-11-23, 11:00AM" */
+    // sample - "2026-11-23, 11:00AM" 
     public static String checkInText(LocalDate d) {
         return d.format(DATE) + ", " + CHECK_IN_TIME.format(TIME);
     }

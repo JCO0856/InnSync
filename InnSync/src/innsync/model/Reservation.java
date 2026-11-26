@@ -35,7 +35,7 @@ public class Reservation {
     public ReservationStatus getStatus() { return status; }
     public void setStatus(ReservationStatus status) { this.status = status; }
 
-    /** Replaces all editable fields at once (used by the Edit dialog). */
+    // Replaces all editable fields at once (used by the Edit dialog). 
     public void update(String guestName, String contact, Room room, LocalDate checkIn,
                        LocalDate checkOut, int guests, ReservationStatus status) {
         this.guestName = guestName;

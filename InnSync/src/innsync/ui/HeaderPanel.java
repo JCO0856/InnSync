@@ -24,8 +24,7 @@ import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.JToggleButton;
 import javax.swing.Timer;
-
-/** Blue logo block + dark navigation bar + date/time + Administrator pill. */
+//ito yung sa nav bar guys tas yung sa data and time na makikita sa taas
 public class HeaderPanel extends JPanel {
 
     private static final int STRIP = 10;       // thin blue line at the very top
@@ -114,7 +113,6 @@ public class HeaderPanel extends JPanel {
         g.dispose();
     }
 
-    // ------------------------------------------------------------------
 
     private static class NavButton extends JToggleButton {
         NavButton(String text) {

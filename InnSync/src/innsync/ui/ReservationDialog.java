@@ -33,7 +33,7 @@ import innsync.model.Reservation;
 import innsync.model.ReservationStatus;
 import innsync.model.Room;
 
-/** Used for both "New Reservation" (editing == null) and "Edit Reservation". */
+// Used for both "New Reservation" (editing == null) and "Edit Reservation". 
 public class ReservationDialog extends JDialog {
 
     private final DataStore store = DataStore.get();
@@ -131,7 +131,7 @@ public class ReservationDialog extends JDialog {
         return ((Date) s.getValue()).toInstant().atZone(ZoneId.systemDefault()).toLocalDate();
     }
 
-    /** Lists only the rooms that are free for the chosen dates and big enough for the guests. */
+    // Lists only the rooms that are free for the chosen dates and big enough for the guests.
     private void refreshRooms() {
         LocalDate in = toLocalDate(inSpinner);
         LocalDate out = toLocalDate(outSpinner);

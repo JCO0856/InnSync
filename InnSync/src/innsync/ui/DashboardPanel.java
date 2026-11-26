@@ -90,7 +90,6 @@ public class DashboardPanel extends JPanel {
         refresh();
     }
 
-    // ---------------------------------------------------------------- pieces
 
     private JComponent roomsBody() {
         JPanel p = new JPanel(new GridLayout(3, 1));
@@ -179,8 +178,6 @@ public class DashboardPanel extends JPanel {
         l.setForeground(Color.BLACK);
         return l;
     }
-
-    // ---------------------------------------------------------------- data
 
     private void updateGreeting() {
         int hour = LocalTime.now().getHour();

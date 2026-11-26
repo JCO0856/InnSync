@@ -9,7 +9,7 @@ import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.SwingConstants;
 
-/** Stand-in page for sections you have not built yet (Record, Accounting, Calendar, Settings). */
+// Stand-in page for Record, Accounting, Calendar, Settings).
 public class PlaceholderPanel extends JPanel {
 
     public PlaceholderPanel(String title) {

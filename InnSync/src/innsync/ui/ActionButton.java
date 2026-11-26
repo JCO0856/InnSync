@@ -12,7 +12,7 @@ import java.awt.geom.Path2D;
 
 import javax.swing.JButton;
 
-/** Small rounded icon button (view / edit / delete) drawn with Java2D, no image files needed. */
+// Small rounded icon button (view / edit / delete) drawn with Java2D
 public class ActionButton extends JButton {
 
     public enum Kind { VIEW, EDIT, DELETE }

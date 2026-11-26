@@ -72,7 +72,7 @@ public class ReservationsPanel extends JPanel {
         refresh();
     }
 
-    // ---------------------------------------------------------------- layout
+    // layout
 
     private JPanel buildFilterBar() {
         statusFilter.addItem("All");
@@ -173,7 +173,7 @@ public class ReservationsPanel extends JPanel {
         return b;
     }
 
-    // ---------------------------------------------------------------- data
+    //data
 
     private void refresh() {
         if (table.isEditing()) {
@@ -215,7 +215,7 @@ public class ReservationsPanel extends JPanel {
         });
     }
 
-    // ---------------------------------------------------------------- row actions
+    //row actions
 
     private void openDialog(Reservation toEdit) {
         Window owner = SwingUtilities.getWindowAncestor(this);

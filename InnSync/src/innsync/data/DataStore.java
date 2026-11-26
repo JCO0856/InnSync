@@ -9,13 +9,7 @@ import innsync.model.Reservation;
 import innsync.model.ReservationStatus;
 import innsync.model.Room;
 
-/**
- * In-memory data store for InnSync.
- *
- * All screens talk to this class only. When you add your database later,
- * replace the list operations inside these methods with SQL/JDBC calls
- * and the UI will keep working without changes.
- */
+//temporary lang ibang code dito hanaggat wala pa database
 public class DataStore {
 
     private static final DataStore INSTANCE = new DataStore();
@@ -33,7 +27,7 @@ public class DataStore {
         seed();
     }
 
-    // ---------- sample data (remove once you have a database) ----------
+    //sample data since wala pa database (tatanggalin rin)
     private void seed() {
         rooms.add(new Room("101", "Single", 1, 1200));
         rooms.add(new Room("102", "Single", 1, 1200));
@@ -73,7 +67,7 @@ public class DataStore {
         return true;
     }
 
-    /** Current status of a room: Occupied, Reserved (today) or Available. */
+    // Current status of a room: Occupied, Reserved (today) or Available. 
     public String getRoomStatus(Room room) {
         LocalDate today = LocalDate.now();
         for (Reservation r : reservations) {
@@ -175,7 +169,7 @@ public class DataStore {
         return n;
     }
 
-    /** Checked-in guests whose check-out date is today (or already passed). */
+    // Checked-in guests whose check-out date is today (or already passed). 
     public int countDeparting() {
         LocalDate today = LocalDate.now();
         int n = 0;

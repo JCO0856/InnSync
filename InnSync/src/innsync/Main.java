@@ -5,7 +5,7 @@ import javax.swing.UIManager;
 
 import innsync.ui.MainFrame;
 
-/** Entry point of InnSync. Run this class as a Java Application. */
+//Entry point kumbaga ito irurun boi
 public class Main {
 
     public static void main(String[] args) {

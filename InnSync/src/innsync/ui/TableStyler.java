@@ -13,7 +13,7 @@ import javax.swing.table.DefaultTableCellRenderer;
 import javax.swing.table.JTableHeader;
 import javax.swing.table.TableCellRenderer;
 
-/** Gives every table in the app the same flat look as the mockup. */
+// Gives every table in the app the same flat look as the mockup. 
 public final class TableStyler {
 
     private TableStyler() { }

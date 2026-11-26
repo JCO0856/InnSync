@@ -13,7 +13,6 @@ public enum ReservationStatus {
         this.label = label;
     }
 
-    /** Statuses that still hold a room. */
     public boolean holdsRoom() {
         return this == BOOKED || this == CONFIRMED || this == CHECKED_IN;
     }

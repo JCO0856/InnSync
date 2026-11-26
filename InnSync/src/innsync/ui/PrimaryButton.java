@@ -13,7 +13,7 @@ import javax.swing.BorderFactory;
 import javax.swing.Icon;
 import javax.swing.JButton;
 
-/** Blue call-to-action button, optionally with the round "+" icon. */
+//ito yung blue button na may "+"sign
 public class PrimaryButton extends JButton {
 
     public PrimaryButton(String text, boolean withPlus) {

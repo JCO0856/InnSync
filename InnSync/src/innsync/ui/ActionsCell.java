@@ -11,7 +11,7 @@ import javax.swing.SwingUtilities;
 import javax.swing.table.TableCellEditor;
 import javax.swing.table.TableCellRenderer;
 
-/** The "Actions" column: view / edit / delete buttons inside a table row. */
+// The Actions column: view / edit / delete buttons inside a table row. 
 public final class ActionsCell {
 
     private ActionsCell() { }
@@ -24,7 +24,7 @@ public final class ActionsCell {
         return p;
     }
 
-    /** Draws the buttons (not clickable). */
+    //Draws the buttons (not clickable). 
     public static class Renderer implements TableCellRenderer {
         private final JPanel panel = panel(
                 new ActionButton(ActionButton.Kind.VIEW, "View"),
@@ -39,7 +39,7 @@ public final class ActionsCell {
         }
     }
 
-    /** Makes the buttons clickable. The row's ID is read from idColumn. */
+    // Ang dahilan kaya ang buttons ay clickable. The row's ID is read from idColumn. 
     public static class Editor extends AbstractCellEditor implements TableCellEditor {
         private final JPanel panel;
         private final int idColumn;

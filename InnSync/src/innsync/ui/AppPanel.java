@@ -5,7 +5,7 @@ import java.awt.CardLayout;
 
 import javax.swing.JPanel;
 
-/** The whole window content: header with navigation on top, the selected page below. */
+// The whole window content: header with navigation on top, the selected page below. 
 public class AppPanel extends JPanel {
 
     private final CardLayout cards = new CardLayout();

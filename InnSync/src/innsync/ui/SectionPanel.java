@@ -9,7 +9,7 @@ import javax.swing.JComponent;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
 
-/** A white box with a bold title and a line under it (Rooms / Reservations / Request-Reports). */
+//A white box with a bold title and a line under it (Rooms / Reservations / Request-Reports).
 public class SectionPanel extends JPanel {
 
     public SectionPanel(String title, JComponent body) {
